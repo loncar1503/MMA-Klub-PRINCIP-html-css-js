@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MMA PRINCIP</title>
+    <link rel="stylesheet" href="css/forma.css" />
+    <link rel="stylesheet" href="css/treneri.css" />
+    <link rel="icon" href="img/mma-klub-gavrilo-princip-modified.png" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <img
+        src="img/mma-klub-gavrilo-princip-modified.png"
+        alt=""
+        class="meni-slika"
+      />
+      <ul class="lista">
+        <li><a href="index.html" class="meni-tekst">Home</a></li>
+        <li><a href="vestine.html" class="meni-tekst">Veštine</a></li>
+        <li><a href="#" class="meni-tekst">Treneri</a></li>
+        <li><a href="forma.html" class="meni-tekst">Prijavi se</a></li>
+      </ul>
+
+      <div class="burger-meni">
+        <button class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="form-container">
+      <form action="" class="forma">
+        <h1>Prijavi se za probni trening!</h1>
+        <label for="text">Ime i prezime:</label>
+        <br />
+        <input type="text" id="Ime" name="Ime" required class="upis" />
+        <br /><br />
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" id="email" name="email" required class="upis" />
+        <br /><br />
+        <label for="phone">Broj telefona:</label>
+        <br />
+        <input type="tel" id="broj" name="broj" required class="upis" />
+
+        <label>Da li ste ranije trenirali neki borilački sport? </label>
+        <div class="upitniksport">
+          <input type="radio" id="opcija1" name="grupa1" checked />
+          Ne<br />
+          <br />
+
+          <input type="radio" id="opcija2" name="grupa1" />
+          Da
+          <select name="" id="bivsiSport">
+            <optgroup label="Sport">
+              <option value="MMA">MMA</option>
+              <option value="Kick Box">Kick Box</option>
+              <option value="Jiu Jitsa">Jiu Jitsa</option>
+              <option value="Rvanje">Rvanje</option>
+              <option value="Taekwondo">Taekwondo</option>
+              <option value="Dzudo">Džudo</option>
+              <option value="Karate">Karate</option>
+              <option value="neki drugi sport koji nije naveden">
+                Neki drugi
+              </option>
+            </optgroup></select
+          ><br />
+          <!-- <label for=""><input type="radio" name="martial_arts" class="radiodugme">Da </label>
+            <label for=""><input type="radio" name="martial_arts" checked class="radiodugme">Ne </label> -->
+          <br />
+        </div>
+
+        <label
+          >Izaberite vreme probnog treninga:
+          <select name="" id="probnitr">
+            <optgroup label="Probni trening">
+              <option value="ponedeljak u 18h">Ponedeljak 18h</option>
+              <option value="sredu u 19h">Sreda 19h</option>
+              <option value="petak u 18h">Petak 18h</option>
+            </optgroup>
+          </select>
+        </label>
+
+        <button id="dugme" type="submit">Prijavi se</button>
+      </form>
+    </div>
+    <script src="js/burger.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

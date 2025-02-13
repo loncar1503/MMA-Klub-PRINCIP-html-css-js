@@ -1,0 +1,367 @@
+* {
+  font-family: fantasy;
+ 
+}
+body {
+  margin: 0;
+
+  flex-direction: column;
+  width: 100%;
+  background-color: gray;
+}
+
+.main-nav {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background: rgba(216, 210, 210, 0.35);
+  font-size: 20px;
+  font-family: fantasy;
+  position: sticky;
+  width: 100%;
+}
+.main-nav .meni-slika {
+  width: 90px;
+  margin-right: auto;
+  padding: 5px;
+}
+.main-nav > ul {
+  padding-right: 50px;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+.main-nav > ul a {
+  padding: 32px;
+  cursor: pointer;
+}
+li a:link {
+  color: azure;
+}
+.main-nav > ul a:hover {
+  background-color: rgb(47, 44, 44);
+}
+
+.meni-tekst {
+  color: azure;
+  text-decoration: none;
+}
+
+.slika {
+  width: 300px;
+  height: 350px;
+  padding-right: 40px;
+  padding-left: 10px;
+  border-radius: 20%;
+  border-collapse: separate;
+  padding-bottom: 10px;
+}
+
+.naslov {
+  background-color: darkgray;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.posao {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.opis {
+  line-height: 1.5;
+  font-size: x-large;
+  color: black;
+  text-wrap: wrap;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+h1 {
+  align-self: center;
+  font-size: 70px;
+  margin-top: 150px;
+}
+
+.ime {
+  font-size: 25px;
+}
+
+.prostorTreneri {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+}
+.trener {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.uloga {
+  text-wrap: wrap;
+  font-size: 20px;
+  color: black;
+}
+
+.slikaTrenera1 {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 20% 100% 100% 100% / 1% 0% 86% 0%;
+  border-collapse: separate;
+}
+
+.slikaTrenera2 {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 100% 100% 50% 50% / 0% 0% 100% 100%;
+  border-collapse: separate;
+}
+
+.slikaTrenera3 {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 100% 100% 0% 100% / 0% 0% 100% 100%;
+  border-collapse: separate;
+  padding-top: 20px;
+}
+
+.t1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  align-items: center;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+.t1:hover .overlay1 {
+  opacity: 1;
+}
+
+.tekstPreko1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: transition-delay(-50%, -50%);
+  color: yellow;
+  font-size: 48px;
+  opacity: 1;
+  transition: ease-out 0.5s ease;
+}
+
+.t1:hover .tekstPreko1 {
+  opacity: 1;
+}
+
+.t2 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  align-items: center;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+.t2:hover .overlay2 {
+  opacity: 1;
+}
+
+.tekstPreko2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: transition-delay(-50%, -50%);
+  color: orange;
+  font-size: 48px;
+  opacity: 1;
+  transition: ease-out 0.5s ease;
+}
+
+.t2:hover .tekstPreko2 {
+  opacity: 1;
+}
+
+.t3 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  align-items: center;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+.t3:hover .overlay3 {
+  opacity: 1;
+}
+
+.tekstPreko3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: transition-delay(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  opacity: 1;
+  transition: ease-out 0.5s ease;
+}
+
+.t3:hover .tekstPreko3 {
+  opacity: 1;
+}
+
+.tekstPreko1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.tekstPreko2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.tekstPreko3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.NasiTreneri .prostor {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: darkgray;
+}
+
+.NasiTreneri h2 {
+  font-size: 25;
+  color: black;
+}
+
+.NasiTreneri .uloga {
+  text-size-adjust: 10;
+}
+
+.prikazMenija {
+  display: none;
+}
+
+.burger-meni {
+  display: none;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: red;
+}
+
+@media (max-width: 600px) {
+  .burger-meni {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background: rgba(216, 210, 210, 0.35);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    opacity: 0;
+    
+  }
+
+  li {
+    margin: 16px 0;
+    color: black;
+    
+  }
+
+  ul.active {
+    left: 0;
+    opacity: 1;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .posao,
+  .prostor {
+    flex-direction: column;
+  }
+  .slika {
+    max-width: 90%;
+  }
+  .trener {
+    width: 90%;
+  }
+  .opis p {
+    text-wrap: wrap;
+  }
+}

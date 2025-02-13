@@ -1,0 +1,168 @@
+html,
+body {
+  font-family: fantasy;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(black, red);
+}
+
+.form-container {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background: rgba(216, 210, 210, 0.35);
+  font-size: 20px;
+  font-family: fantasy;
+  position: sticky;
+  width: 100%;
+}
+.main-nav .meni-slika {
+  width: 90px;
+  margin-right: auto;
+  padding: 5px;
+}
+.main-nav > ul {
+  padding-right: 50px;
+  color: white;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+.main-nav > ul a {
+  padding: 32px;
+  cursor: pointer;
+}
+li a:link {
+  color: azure;
+}
+.main-nav > ul a:hover {
+  background-color: rgb(47, 44, 44);
+}
+
+.meni-tekst {
+  color: azure;
+  text-decoration: none;
+}
+
+.forma {
+  margin-top: 120px;
+  width: 600px;
+  margin-bottom: 30px;
+
+  padding: 20px;
+  background-color: #d14141;
+  border-radius: 8px;
+  box-shadow: 0px 0 140px rgba(171, 66, 66, 0.9); /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
+}
+
+h1 {
+  color: #302c2c;
+}
+
+form {
+  background-color: #d14141;
+  margin-top: 20px;
+  width: 600px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #302c2c;
+}
+select {
+  margin-left: 15px;
+  font-family: fantasy;
+}
+
+#bivsiSport {
+  display: none;
+  margin-top: 10px;
+}
+input.upis {
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.tekst {
+  color: #444;
+  line-height: 1.6;
+}
+
+#dugme {
+  letter-spacing: 0.4px;
+  font-family: fantasy;
+  background-color: #3b3a30;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#dugme:hover {
+  background-color: #040405;
+}
+
+.tekst.prvi,
+.tekst.treci {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.radiodugme {
+  display: inline;
+}
+@media (max-width: 650px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1350px) {
+  .forma {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .forma {
+    width: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .forma {
+    width: 400px;
+  }
+}
+
+@media (max-width: 650px) {
+  .forma {
+    width: 400px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .forma {
+    width: 300px;
+  }
+}

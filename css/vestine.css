@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background-color: darkgray;
+  font-family: fantasy;
+}
+
+.container {
+  padding-inline: 200px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.light-bg,
+.dark-bg {
+  padding-block: 24px;
+}
+
+.dark-bg {
+  background: lightgray;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 48px;
+
+  border-bottom: 1px solid gray;
+}
+.skill-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 48px;
+
+  width: 1000px;
+  max-width: 100%;
+
+  /* margin-bottom: 24px; */
+}
+
+.skill-image {
+  /* width: 300px;
+  height: 400px; */
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 25px;
+  /* height: 100%; */
+
+  flex: 1;
+
+  cursor: pointer;
+
+  transition: all 150ms ease;
+}
+
+.skill-desc {
+  font-size: 24px;
+  flex: 2;
+}
+
+.skill-desc h3 {
+  font-size: 1.5em;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding-inline: 120px;
+  }
+
+  .skill-desc {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .skill-image,
+  .skill-desc {
+    flex: unset;
+  }
+
+  .skill-image {
+    height: 350px;
+  }
+
+  .container {
+    padding-inline: 24px;
+  }
+}
